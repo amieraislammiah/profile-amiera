@@ -1,3 +1,11 @@
+type Experience = {
+  company: string
+  role: string
+  period: string
+  description: string
+  achievements: string[]
+}
+
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Download, Calendar, Briefcase, Award, CheckCircle } from "lucide-react";
