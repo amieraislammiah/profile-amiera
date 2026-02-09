@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Upload, Trash2 } from "lucide-react";
 
 interface ProofUploaderProps {
@@ -8,18 +8,14 @@ interface ProofUploaderProps {
 }
 
 export default function ProofUploader({ projectId }: ProofUploaderProps) {
-  const [uploads, setUploads] = useState<string[]>([]);
-
-  useEffect(() => {
+  const [uploads, setUploads] = useState<string[]>(() => {
     try {
-      const saved = localStorage.getItem(`proofs:${projectId}`);
-      if (saved) {
-        setUploads(JSON.parse(saved));
-      }
+      const saved = typeof window !== "undefined" ? localStorage.getItem(`proofs:${projectId}`) : null;
+      return saved ? JSON.parse(saved) : [];
     } catch {
-      // ignore
+      return [];
     }
-  }, [projectId]);
+  });
 
   const persist = (items: string[]) => {
     setUploads(items);
@@ -56,7 +52,7 @@ export default function ProofUploader({ projectId }: ProofUploaderProps) {
       </h2>
       <p className="text-sm text-gray-600 mb-4">
         Use this to quickly preview images locally. To make evidence visible to everyone,
-        add images to public/ and list them under this project's proofs in the data file.
+        add images to public/ and list them under this project&apos;s proofs in the data file.
       </p>
       <label className="inline-flex items-center px-4 py-2 bg-maroon-800 text-white rounded-lg cursor-pointer hover:bg-maroon-700 transition-colors">
         <Upload size={18} className="mr-2" />

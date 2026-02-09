@@ -84,7 +84,7 @@ export default async function ProjectPage(props: { params: Promise<{ id: string 
             <section>
               <h2 className="text-2xl font-bold text-maroon-900 mb-6 border-b border-maroon-200 pb-2">Development Process</h2>
               <div className="space-y-6">
-                {project.process.map((step, idx) => (
+                {project.process?.map((step, idx) => (
                   <div key={idx} className="bg-white rounded-xl p-6 border border-maroon-100 shadow-sm">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       <div className="space-y-2">
@@ -150,7 +150,7 @@ export default async function ProjectPage(props: { params: Promise<{ id: string 
               <h3 className="text-lg font-bold text-maroon-900 mb-4">My Role</h3>
               <p className="text-maroon-600 font-semibold mb-4">{project.role}</p>
               <ul className="space-y-3">
-                {project.contributions.map((item, idx) => (
+                {project.contributions?.map((item, idx) => (
                   <li key={idx} className="flex items-start text-sm text-gray-700">
                     <CheckCircle size={16} className="text-maroon-500 mr-2 mt-0.5 flex-shrink-0" />
                     {item}
@@ -163,7 +163,7 @@ export default async function ProjectPage(props: { params: Promise<{ id: string 
             <div className="bg-cream-50 p-6 rounded-xl border border-maroon-100 shadow-sm">
               <h3 className="text-lg font-bold text-maroon-900 mb-4">Key Objectives</h3>
               <ul className="space-y-2">
-                {project.objectives.map((obj, idx) => (
+                {project.objectives?.map((obj, idx) => (
                   <li key={idx} className="flex items-start text-sm text-gray-700">
                     <span className="mr-2 mt-1.5 w-1.5 h-1.5 bg-maroon-400 rounded-full flex-shrink-0" />
                     {obj}
@@ -176,7 +176,7 @@ export default async function ProjectPage(props: { params: Promise<{ id: string 
             <div className="bg-maroon-50 p-6 rounded-xl border border-maroon-100">
               <h3 className="text-lg font-bold text-maroon-900 mb-4">Documentation</h3>
               <div className="space-y-3">
-                {project.documentation.length > 0 ? (
+                {Array.isArray(project.documentation) && project.documentation.length > 0 ? (
                   project.documentation.map((doc, idx) => (
                     <a
                       key={idx}

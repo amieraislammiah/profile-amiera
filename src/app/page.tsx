@@ -24,7 +24,7 @@ export default function Home() {
             {/* Text Content */}
             <div className="text-center lg:text-left order-2 lg:order-1">
               <h1 className="text-4xl tracking-tight font-extrabold text-maroon-900 sm:text-5xl md:text-6xl mb-6">
-                <span className="block">Hi, I'm {portfolioData.personalInfo.name}</span>
+                <span className="block">Hi, I&apos;m {portfolioData.personalInfo.name}</span>
                 <span className="block text-maroon-600 text-2xl sm:text-3xl md:text-4xl mt-3 font-bold">{portfolioData.personalInfo.title}</span>
               </h1>
               <p className="mt-4 text-base text-gray-600 sm:text-lg md:text-xl max-w-2xl mx-auto lg:mx-0">
@@ -95,7 +95,7 @@ export default function Home() {
                 <p className="text-gray-600 mb-4">{exp.description}</p>
                 
                 <ul className="space-y-2">
-                  {exp.achievements.map((achievement, i) => (
+                  {exp.achievements.map((achievement: string, i: number) => (
                     <li key={i} className="flex items-start text-gray-600 text-sm">
                       <span className="mr-2 mt-1.5 w-1.5 h-1.5 bg-maroon-400 rounded-full flex-shrink-0" />
                       {achievement}
@@ -148,7 +148,7 @@ export default function Home() {
                 <div key={category.category}>
                   <h4 className="text-lg font-semibold text-gray-800 mb-3">{category.category}</h4>
                   <div className="flex flex-wrap gap-2">
-                    {category.skills.map((skill) => (
+                    {category.skills.map((skill: string) => (
                       <span
                         key={skill}
                         className="bg-white border border-maroon-100 text-gray-700 px-3 py-1.5 rounded-lg text-sm font-medium shadow-sm hover:border-maroon-300 transition-colors"
@@ -189,7 +189,7 @@ export default function Home() {
         <div className="bg-maroon-800 rounded-2xl p-8 md:p-12 text-center text-white max-w-4xl mx-auto">
           <h3 className="text-2xl font-bold mb-4">Interested in working together?</h3>
           <p className="text-maroon-100 mb-8 max-w-2xl mx-auto">
-            I'm currently open to new opportunities as a System Analyst or Business Analyst. 
+            I&apos;m currently open to new opportunities as a System Analyst or Business Analyst. 
             Feel free to reach out if you have any questions or just want to say hi.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-8">

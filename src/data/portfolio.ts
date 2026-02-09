@@ -1,4 +1,4 @@
-import { Experience, Certification, SkillCategory } from "./portfolio";
+// Type definitions for portfolio data
 
 export interface Project {
   id: string;
@@ -33,6 +33,27 @@ export interface Activity {
   role: string;
   period: string;
   description: string;
+}
+
+export interface SkillCategory {
+  category: string;
+  skills: string[];
+}
+
+export interface Experience {
+  id: string;
+  company: string;
+  role: string;
+  period: string;
+  description: string;
+  achievements: string[];
+}
+
+export interface Certification {
+  id: string;
+  name: string;
+  issuer: string;
+  date: string;
 }
 
 export const portfolioData = {
@@ -516,4 +537,3 @@ export const portfolioData = {
   ] as Project[],
 };
 
-export type { Project, Experience, Certification, SkillCategory };
