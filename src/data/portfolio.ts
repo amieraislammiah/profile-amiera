@@ -60,9 +60,9 @@ export const portfolioData = {
   personalInfo: {
     name: "Nur Amiera Islammiah",
     title: "Information Systems Engineering Graduate | System Analyst",
-    tagline: "Bridging business needs with technical solutions through data analytics and automation.",
+    tagline: "Building Scalable Systems with Data-Driven Precision.",
     summary:
-      "A graduate with a Bachelor of Information Systems (Hons.) majoring in Information Systems Engineering, with 1 year of experience in data analytics, automation, system development, and design through my internship at PETRONAS and the PROTÉGÉ program at HeiTech Padu Berhad. As a Data Programmer at PETRONAS, I developed data-driven solutions, automated workflows, and improved reporting processes. Previously, as a Business Analyst at Maybank, I supported system development and analysis to enhance business operations. I'm eager to apply my skills in data analytics, software development, and emerging technologies to build impactful and scalable solutions.",
+      "A results-driven Bachelor of Information Systems (Hons.) graduate majoring in Information Systems Engineering, with over one year of hands-on experience in data analytics, process automation, system development, and solution design gained through roles at PETRONAS and HeiTech Padu Berhad under the PROTÉGÉ program. At PETRONAS, I contributed as a Data Programmer, delivering data-driven solutions, streamlining workflows through automation, and enhancing reporting accuracy and efficiency. I further strengthened my business and system analysis capabilities through my experience supporting system development initiatives at Maybank, helping to improve operational performance and stakeholder alignment. Equipped with strong analytical thinking, technical proficiency, and a continuous improvement mindset, I am eager to contribute as a System Analyst, Business Analyst, or Software Engineer in building scalable, high-impact digital solutions that drive business value.",
     email: "amiera.islammiah@gmail.com",
     linkedin: "https://linkedin.com/in/nuramieraislammiah",
     github: "https://github.com/nuramieraislammiah",
@@ -532,6 +532,46 @@ export const portfolioData = {
       images: [],
       proofs: [],
       thumbnail: "/mbs-logo.png",
+      confidential: true,
+    },
+    {
+      id: "project-land-management-sd",
+      title: "Land Management System (Sime Darby Guthrie)",
+      description:
+        "Digitization of land management processes to centralize records, workflows, and reporting for Sime Darby Guthrie.",
+      overview:
+        "The Land Management System project was initiated to digitize and streamline land-related processes within Sime Darby Guthrie. The system improves visibility, accuracy, and efficiency in managing land records, workflows, and reporting, replacing fragmented manual processes with an integrated digital platform. The solution enhances data accessibility, strengthens governance over land information, and enables better decision-making through centralized and structured data management.",
+      objectives: [
+        "Digitize and centralize land management records and workflows",
+        "Improve data accuracy, traceability, and reporting capabilities",
+        "Enhance operational efficiency by reducing manual processes",
+        "Provide scalable system architecture to support future enhancements",
+        "Strengthen monitoring and visibility of land-related activities"
+      ],
+      tools: ["System Analysis", "Requirements Engineering", "Solution Architecture", "Process Modeling"],
+      role: "System Analyst (Freelance)",
+      contributions: [
+        "Contributed to solution proposal preparation, including scope definition and high-level system approach",
+        "Engaged with stakeholders to elicit, analyze, and document business and system requirements",
+        "Produced high-level system architecture and solution design aligned with business needs",
+        "Defined development approach, workflow, and technical considerations for implementation",
+        "Ensured the proposed system supports operational efficiency and governance requirements",
+        "Prepared structured analysis and design artefacts to support the development lifecycle"
+      ],
+      process: [
+        {
+          problem:
+            "Land data and workflows were managed through fragmented, manual processes, limiting visibility, consistency, and governance.",
+          solution:
+            "Designed a centralized land management system with structured workflows, clear data ownership, and scalable architecture for future enhancements.",
+          outcome:
+            "Enabled clearer visibility of land data through centralized management, reduced dependency on manual tracking, and established a scalable foundation for future digital improvements."
+        }
+      ],
+      documentation: [],
+      images: [],
+      proofs: [],
+      thumbnail: "/sd-logo.png",
       confidential: true,
     },
   ] as Project[],
