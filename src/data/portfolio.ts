@@ -260,7 +260,7 @@ export const portfolioData = {
         "Strengthen monitoring and visibility of land-related activities"
       ],
       tools: ["System Analysis", "Requirements Engineering", "Solution Architecture", "Process Modeling"],
-      role: "System Analyst",
+      role: "System Analyst (Contract)",
       contributions: [
         "Contributed to solution proposal preparation, including scope definition and high-level system approach",
         "Engaged with stakeholders to elicit, analyze, and document business and system requirements",
@@ -299,7 +299,7 @@ export const portfolioData = {
         "Enable role-based accountability across Registrar, Reviewer, Approver, Admin"
       ],
       tools: ["System Analysis", "SRS", "Process Modeling", "RBAC", "UAT"],
-      role: "System Analyst",
+      role: "System Analyst (Contract)",
       contributions: [
         "Gathered and validated requirements from stakeholders and end users",
         "Defined functional and non-functional requirements in the SRS",
