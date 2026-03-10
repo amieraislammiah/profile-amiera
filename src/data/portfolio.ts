@@ -214,7 +214,7 @@ export const portfolioData = {
       id: "project-gis-taiping",
       title: "GIS Urban Planning System (Taiping)",
       description: "Confidential government project to centralize urban planning spatial data and workflows.",
-      period: "Dec 2025 – Feb 2026",
+      
       overview:
         "The GIS Urban Planning System for Taiping was developed to support Bandar Perancang in managing spatial planning data, infrastructure information, and development-related records through a centralized digital platform. The system integrates geospatial data with planning workflows, enabling planners to visualize, analyze, and manage planning information more efficiently. By replacing fragmented manual processes, the system enhances data accessibility, planning transparency, and decision-making for municipal development initiatives.",
       objectives: [
