@@ -66,7 +66,7 @@ export const portfolioData = {
     email: "amiera.islammiah@gmail.com",
     linkedin: "https://linkedin.com/in/nuramieraislammiah",
     github: "https://github.com/nuramieraislammiah",
-    resumeUrl: "https://drive.google.com/file/d/1wf1nLAMD2SroqXLIfa6gfwe1Xqb6EYVV/view?usp=sharing",
+    resumeUrl: "https://drive.google.com/file/d/1fHHE_iiWLwDJflpR3CIBtQ3H0NDZf5oJ/view?usp=sharing",
   },
   skills: [
     {
@@ -243,6 +243,84 @@ export const portfolioData = {
       documentation: [],
       images: [],
       thumbnail: "/taiping-logo.png",
+      confidential: true,
+    },
+    {
+      id: "project-land-management-sd",
+      title: "Land Management System (Sime Darby Guthrie)",
+      description:
+        "Digitization of land management processes to centralize records, workflows, and reporting for Sime Darby Guthrie.",
+      overview:
+        "The Land Management System project was initiated to digitize and streamline land-related processes within Sime Darby Guthrie. The system improves visibility, accuracy, and efficiency in managing land records, workflows, and reporting, replacing fragmented manual processes with an integrated digital platform. The solution enhances data accessibility, strengthens governance over land information, and enables better decision-making through centralized and structured data management.",
+      objectives: [
+        "Digitize and centralize land management records and workflows",
+        "Improve data accuracy, traceability, and reporting capabilities",
+        "Enhance operational efficiency by reducing manual processes",
+        "Provide scalable system architecture to support future enhancements",
+        "Strengthen monitoring and visibility of land-related activities"
+      ],
+      tools: ["System Analysis", "Requirements Engineering", "Solution Architecture", "Process Modeling"],
+      role: "System Analyst",
+      contributions: [
+        "Contributed to solution proposal preparation, including scope definition and high-level system approach",
+        "Engaged with stakeholders to elicit, analyze, and document business and system requirements",
+        "Produced high-level system architecture and solution design aligned with business needs",
+        "Defined development approach, workflow, and technical considerations for implementation",
+        "Ensured the proposed system supports operational efficiency and governance requirements",
+        "Prepared structured analysis and design artefacts to support the development lifecycle"
+      ],
+      process: [
+        {
+          problem:
+            "Land data and workflows were managed through fragmented, manual processes, limiting visibility, consistency, and governance.",
+          solution:
+            "Designed a centralized land management system with structured workflows, clear data ownership, and scalable architecture for future enhancements.",
+          outcome:
+            "Enabled clearer visibility of land data through centralized management, reduced dependency on manual tracking, and established a scalable foundation for future digital improvements."
+        }
+      ],
+      documentation: [],
+      images: [],
+      proofs: [],
+      thumbnail: "/sd-logo.png",
+      confidential: true,
+    },
+    {
+      id: "project-geo-seremban",
+      title: "Asset Infrastructure Management System (Geo Seremban)",
+      description: "Digitized and centralized asset registration, tracking, and lifecycle management across operational locations.",
+      period: "Dec 2025 - Feb 2026",
+      overview:
+        "The Asset Infrastructure Management System (Geo Seremban) replaces manual, fragmented asset records with a structured system. It improves data accuracy, asset visibility, lifecycle tracking, and audit readiness through standardized workflows and role-based access.",
+      objectives: [
+        "Centralize asset data and standardize registration/update/disposal workflows",
+        "Improve asset visibility, ownership, and location tracking",
+        "Strengthen audit readiness and reduce manual errors",
+        "Enable role-based accountability across Registrar, Reviewer, Approver, Admin"
+      ],
+      tools: ["System Analysis", "SRS", "Process Modeling", "RBAC", "UAT"],
+      role: "System Analyst",
+      contributions: [
+        "Gathered and validated requirements from stakeholders and end users",
+        "Defined functional and non-functional requirements in the SRS",
+        "Designed workflows, process flows, and role-based access control",
+        "Coordinated with developers to clarify requirements and validate system behavior",
+        "Supported system testing, verification, and UAT activities"
+      ],
+      process: [
+        {
+          problem:
+            "Asset records maintained manually across units led to inconsistent/outdated data, limited status visibility, and audit challenges.",
+          solution:
+            "Designed a centralized system with structured workflows (registration, updates, maintenance, disposal) and role-based dashboards.",
+          outcome:
+            "Improved data accuracy and consistency, enhanced lifecycle/status visibility, reduced manual processing, and stronger audit readiness."
+        }
+      ],
+      documentation: [],
+      images: [],
+      proofs: [],
+      thumbnail: "/mbs-logo.png",
       confidential: true,
     },
     {
@@ -540,84 +618,6 @@ export const portfolioData = {
       images: [],
       proofs: [],
       thumbnail: "/uitm-logo.png",
-      confidential: true,
-    },
-    {
-      id: "project-geo-seremban",
-      title: "Asset Infrastructure Management System (Geo Seremban)",
-      description: "Digitized and centralized asset registration, tracking, and lifecycle management across operational locations.",
-      period: "Dec 2025 - Feb 2026",
-      overview:
-        "The Asset Infrastructure Management System (Geo Seremban) replaces manual, fragmented asset records with a structured system. It improves data accuracy, asset visibility, lifecycle tracking, and audit readiness through standardized workflows and role-based access.",
-      objectives: [
-        "Centralize asset data and standardize registration/update/disposal workflows",
-        "Improve asset visibility, ownership, and location tracking",
-        "Strengthen audit readiness and reduce manual errors",
-        "Enable role-based accountability across Registrar, Reviewer, Approver, Admin"
-      ],
-      tools: ["System Analysis", "SRS", "Process Modeling", "RBAC", "UAT"],
-      role: "System Analyst",
-      contributions: [
-        "Gathered and validated requirements from stakeholders and end users",
-        "Defined functional and non-functional requirements in the SRS",
-        "Designed workflows, process flows, and role-based access control",
-        "Coordinated with developers to clarify requirements and validate system behavior",
-        "Supported system testing, verification, and UAT activities"
-      ],
-      process: [
-        {
-          problem:
-            "Asset records maintained manually across units led to inconsistent/outdated data, limited status visibility, and audit challenges.",
-          solution:
-            "Designed a centralized system with structured workflows (registration, updates, maintenance, disposal) and role-based dashboards.",
-          outcome:
-            "Improved data accuracy and consistency, enhanced lifecycle/status visibility, reduced manual processing, and stronger audit readiness."
-        }
-      ],
-      documentation: [],
-      images: [],
-      proofs: [],
-      thumbnail: "/mbs-logo.png",
-      confidential: true,
-    },
-    {
-      id: "project-land-management-sd",
-      title: "Land Management System (Sime Darby Guthrie)",
-      description:
-        "Digitization of land management processes to centralize records, workflows, and reporting for Sime Darby Guthrie.",
-      overview:
-        "The Land Management System project was initiated to digitize and streamline land-related processes within Sime Darby Guthrie. The system improves visibility, accuracy, and efficiency in managing land records, workflows, and reporting, replacing fragmented manual processes with an integrated digital platform. The solution enhances data accessibility, strengthens governance over land information, and enables better decision-making through centralized and structured data management.",
-      objectives: [
-        "Digitize and centralize land management records and workflows",
-        "Improve data accuracy, traceability, and reporting capabilities",
-        "Enhance operational efficiency by reducing manual processes",
-        "Provide scalable system architecture to support future enhancements",
-        "Strengthen monitoring and visibility of land-related activities"
-      ],
-      tools: ["System Analysis", "Requirements Engineering", "Solution Architecture", "Process Modeling"],
-      role: "System Analyst",
-      contributions: [
-        "Contributed to solution proposal preparation, including scope definition and high-level system approach",
-        "Engaged with stakeholders to elicit, analyze, and document business and system requirements",
-        "Produced high-level system architecture and solution design aligned with business needs",
-        "Defined development approach, workflow, and technical considerations for implementation",
-        "Ensured the proposed system supports operational efficiency and governance requirements",
-        "Prepared structured analysis and design artefacts to support the development lifecycle"
-      ],
-      process: [
-        {
-          problem:
-            "Land data and workflows were managed through fragmented, manual processes, limiting visibility, consistency, and governance.",
-          solution:
-            "Designed a centralized land management system with structured workflows, clear data ownership, and scalable architecture for future enhancements.",
-          outcome:
-            "Enabled clearer visibility of land data through centralized management, reduced dependency on manual tracking, and established a scalable foundation for future digital improvements."
-        }
-      ],
-      documentation: [],
-      images: [],
-      proofs: [],
-      thumbnail: "/sd-logo.png",
       confidential: true,
     },
   ] as Project[],
