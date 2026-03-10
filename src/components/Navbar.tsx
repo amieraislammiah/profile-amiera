@@ -2,8 +2,42 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, X } from "lucide-react";
 import Image from "next/image";
+
+const MenuIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <line x1="4" x2="20" y1="12" y2="12" />
+    <line x1="4" x2="20" y1="6" y2="6" />
+    <line x1="4" x2="20" y1="18" y2="18" />
+  </svg>
+);
+
+const CloseIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={24}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M18 6 6 18" />
+    <path d="m6 6 12 12" />
+  </svg>
+);
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,20 +55,22 @@ export default function Navbar() {
     <nav className="fixed w-full bg-cream-50/90 backdrop-blur-sm z-50 border-b border-cream-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20 items-center">
+
+          {/* Logo */}
           <div className="flex-shrink-0 flex items-center gap-3">
-             <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-maroon-700">
-                <Image 
-                  src="/profile.png" 
-                  alt="Nur Amiera" 
-                  fill
-                  className="object-cover"
-                />
-             </div>
+            <div className="relative w-10 h-10 rounded-full overflow-hidden border-2 border-maroon-700">
+              <Image
+                src="/profile.png"
+                alt="Nur Amiera"
+                fill
+                className="object-cover"
+              />
+            </div>
             <Link href="/" className="text-xl font-bold text-maroon-900 tracking-tight hover:text-maroon-700 transition-colors">
               Portfolio
             </Link>
           </div>
-          
+
           {/* Desktop Menu */}
           <div className="hidden md:flex space-x-8">
             {navLinks.map((link) => (
@@ -53,10 +89,12 @@ export default function Navbar() {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="text-maroon-800 hover:text-maroon-600 focus:outline-none"
+              aria-label="Toggle menu"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <CloseIcon /> : <MenuIcon />}
             </button>
           </div>
+
         </div>
       </div>
 
