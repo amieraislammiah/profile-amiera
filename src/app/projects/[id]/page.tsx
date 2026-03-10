@@ -10,9 +10,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function ProjectPage(props: { params: Promise<{ id: string }> }) {
-  const params = await props.params;
-  const project = portfolioData.projects.find((p) => p.id === params.id);
+export default function ProjectPage({ params }: { params: { id: string } }) {
+  const { id } = params;
+  const project = portfolioData.projects.find((p) => p.id === id);
 
   if (!project) {
     return notFound();
@@ -181,6 +181,8 @@ export default async function ProjectPage(props: { params: Promise<{ id: string 
                     <a
                       key={idx}
                       href={doc.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="flex items-center p-3 bg-white rounded-lg border border-maroon-100 text-maroon-700 hover:shadow-md transition-shadow text-sm font-medium"
                     >
                       <FileText size={18} className="mr-3 text-maroon-500" />

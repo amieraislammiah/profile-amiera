@@ -1,14 +1,7 @@
-type Experience = {
-  company: string
-  role: string
-  period: string
-  description: string
-  achievements: string[]
-}
 
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowRight, Download, Calendar, Briefcase, Award, CheckCircle } from "lucide-react";
+import { Download, Calendar, Briefcase, Award, CheckCircle } from "lucide-react";
 import { portfolioData } from "@/data/portfolio";
 import Section from "@/components/Section";
 import ProjectCard from "@/components/ProjectCard";
@@ -40,6 +33,8 @@ export default function Home() {
                 </Link>
                 <a
                   href={portfolioData.personalInfo.resumeUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-maroon-800 bg-maroon-100 hover:bg-maroon-200 md:py-4 md:text-lg transition-colors shadow-sm"
                 >
                   <Download size={20} className="mr-2" /> Resume
@@ -75,7 +70,7 @@ export default function Home() {
       <Section id="experience" title="Work Experience" light>
         <div className="max-w-4xl mx-auto">
           <div className="relative border-l-2 border-maroon-200 ml-3 md:ml-6 space-y-12">
-            {portfolioData.experience.map((exp, index) => (
+            {portfolioData.experience.map((exp) => (
               <div key={exp.id} className="relative pl-8 md:pl-12">
                 {/* Timeline dot */}
                 <div className="absolute top-0 left-[-9px] bg-maroon-700 w-4 h-4 rounded-full border-4 border-cream-50 shadow-sm" />
@@ -95,8 +90,8 @@ export default function Home() {
                 <p className="text-gray-600 mb-4">{exp.description}</p>
                 
                 <ul className="space-y-2">
-                  {exp.achievements.map((achievement: string, i: number) => (
-                    <li key={i} className="flex items-start text-gray-600 text-sm">
+                  {exp.achievements.map((achievement: string) => (
+                    <li key={achievement} className="flex items-start text-gray-600 text-sm">
                       <span className="mr-2 mt-1.5 w-1.5 h-1.5 bg-maroon-400 rounded-full flex-shrink-0" />
                       {achievement}
                     </li>
@@ -130,7 +125,7 @@ export default function Home() {
       <Section id="projects" title="Featured Projects">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {portfolioData.projects.map((project) => (
-            <ProjectCard key={project.id} project={project} />
+<ProjectCard project={project} />
           ))}
         </div>
       </Section>

@@ -100,6 +100,17 @@ export const portfolioData = {
   ] as SkillCategory[],
   experience: [
     {
+      id: "exp-0",
+      company: "GeoInfo Services Sdn Bhd",
+      role: "System Analyst (Contract)",
+      period: "Dec 2025 – Present",
+      description: "Lead system analysis and solution development for GIS-based and government-related digital projects.",
+      achievements: [
+        "Led analysis and solution design for GeoSeremban, Taiping Smart City, and Sime Darby Guthrie initiatives, supporting digital transformation and data-driven urban planning.",
+        "Contributed to development of GIS-enabled platforms for urban planning, asset management, and spatial data visualization."
+      ],
+    },
+    {
       id: "exp-1",
       company: "Maybank",
       role: "Business Analyst (Contract)",
@@ -199,6 +210,41 @@ export const portfolioData = {
     },
   ] as Certification[],
   projects: [
+    {
+      id: "project-gis-taiping",
+      title: "GIS Urban Planning System (Taiping)",
+      description: "Confidential government project to centralize urban planning spatial data and workflows.",
+      period: "Dec 2025 – Feb 2026",
+      overview:
+        "The GIS Urban Planning System for Taiping was developed to support Bandar Perancang in managing spatial planning data, infrastructure information, and development-related records through a centralized digital platform. The system integrates geospatial data with planning workflows, enabling planners to visualize, analyze, and manage planning information more efficiently. By replacing fragmented manual processes, the system enhances data accessibility, planning transparency, and decision-making for municipal development initiatives.",
+      objectives: [
+        "Support Bandar Perancang in managing spatial planning data efficiently",
+        "Enable GIS-based visualization for planning zones and development areas",
+        "Improve accessibility and accuracy of planning information",
+        "Streamline planning workflows and reduce manual processes",
+        "Support better urban planning decision-making through geospatial insights"
+      ],
+      tools: ["System Analysis", "GIS", "SRS", "URS", "SDS", "Process Modeling", "RBAC", "UAT", "Urban Planning Data Management"],
+      role: "System Analyst (Full-time)",
+      contributions: [
+        "Conducted requirements gathering sessions with Bandar Perancang stakeholders and operational users",
+        "Defined functional and non-functional requirements within the Software Requirements Specification (SRS)",
+        "Designed system workflows, process models, and role-based access control structures",
+        "Collaborated with developers to ensure accurate implementation of GIS and planning functionalities",
+        "Supported system validation, testing, and User Acceptance Testing (UAT)"
+      ],
+      process: [
+        {
+          problem: "Urban planning data and infrastructure information were previously managed across multiple manual records and disconnected systems, limiting access, visibility, and coordination.",
+          solution: "Designed a GIS-enabled planning management system that centralizes spatial data and supports operational workflows with interactive mapping, a centralized repository, structured data validation/update workflows, and role-based access control.",
+          outcome: "Provided centralized access to planning information, enhanced GIS visualization of development areas and infrastructure, enabled more data-driven decisions, reduced manual processing, improved data accuracy, and strengthened coordination among stakeholders."
+        }
+      ],
+      documentation: [],
+      images: [],
+      thumbnail: "/taiping-logo.png",
+      confidential: true,
+    },
     {
       id: "project-1",
       title: "NIISe System Documentation & Analysis",
@@ -510,7 +556,7 @@ export const portfolioData = {
         "Enable role-based accountability across Registrar, Reviewer, Approver, Admin"
       ],
       tools: ["System Analysis", "SRS", "Process Modeling", "RBAC", "UAT"],
-      role: "System Analyst (Freelance)",
+      role: "System Analyst",
       contributions: [
         "Gathered and validated requirements from stakeholders and end users",
         "Defined functional and non-functional requirements in the SRS",
@@ -549,7 +595,7 @@ export const portfolioData = {
         "Strengthen monitoring and visibility of land-related activities"
       ],
       tools: ["System Analysis", "Requirements Engineering", "Solution Architecture", "Process Modeling"],
-      role: "System Analyst (Freelance)",
+      role: "System Analyst",
       contributions: [
         "Contributed to solution proposal preparation, including scope definition and high-level system approach",
         "Engaged with stakeholders to elicit, analyze, and document business and system requirements",
