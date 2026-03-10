@@ -225,7 +225,7 @@ export const portfolioData = {
         "Support better urban planning decision-making through geospatial insights"
       ],
       tools: ["System Analysis", "GIS", "SRS", "URS", "SDS", "Process Modeling", "RBAC", "UAT", "Urban Planning Data Management"],
-      role: "System Analyst (Full-time)",
+      role: "System Analyst (Contract)",
       contributions: [
         "Conducted requirements gathering sessions with Bandar Perancang stakeholders and operational users",
         "Defined functional and non-functional requirements within the Software Requirements Specification (SRS)",
