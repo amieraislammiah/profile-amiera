@@ -227,6 +227,114 @@ export const portfolioData = {
   ] as Certification[],
   projects: [
     {
+      id: "project-osk-core-banking",
+      title: "Core Banking Implementation (OSK)",
+      description: "GL configuration, multi-entity rollout and e-Invoice testing for OSK Group entities on a core banking and lending platform.",
+      period: "May 2026 – Sep 2026",
+      overview:
+        "OSK Group runs several financing entities, including Islamic and conventional businesses, on a single core banking and lending platform. As Professional Services Engineer at JurisTech, I supported the rollout of new entities onto the platform, configured and tested their General Ledger (GL) postings, wrote the functional specifications for integration enhancements, and fixed production defects affecting GL output.",
+      objectives: [
+        "Configure accurate GL postings for each OSK entity, covering Islamic and conventional financing",
+        "Separate data and postings correctly across entities sharing one platform",
+        "Deliver e-Invoice submission to the national tax authority for each entity",
+        "Specify integrations between OSK's front-end system and the core platform",
+        "Resolve production GL defects without disrupting month-end reporting"
+      ],
+      tools: ["Oracle SQL", "PL/SQL", "GL Configuration", "FSD", "e-Invoice", "Git", "Toad", "WinSCP", "ClickUp"],
+      role: "Professional Services Engineer",
+      contributions: [
+        "Configured GL posting rules across around 50 financing scenarios for a new Islamic financing entity, and tested them against the platform's financing APIs",
+        "Retagged around 2,800 GL entry lines to the correct entity and scoped posting conditions by product entity after reviewer feedback",
+        "Led end-to-end e-Invoice testing across the four-stage batch chain for the multi-entity release",
+        "Authored a 14-chapter FSD for front-end-to-core integrations, with one-way integration rules and testable acceptance criteria",
+        "Scoped new GL posting legs for another entity's deployment and flagged a missing GL account as a blocker for Finance",
+        "Deployed PL/SQL changes through Git branches and SQL deployment files"
+      ],
+      process: [
+        {
+          problem: "Fee postings for one entity were silently skipping all Islamic financing accounts, leaving fee transactions unposted in the GL.",
+          solution: "Traced the cause to a posting condition that excluded Islamic products, then reposted the missing entries through a manual GL script with a guard that makes it safe to re-run.",
+          outcome: "All unposted fee transactions were reposted without duplicates, and the condition was corrected to prevent recurrence."
+        },
+        {
+          problem: "A GL export file for one entity was generated with no entries for a business day.",
+          solution: "Traced it to an upstream accrual batch that ran around 15 hours late, after the GL file had already been generated.",
+          outcome: "Gave the client a clear root-cause explanation and the steps to regenerate the file."
+        },
+        {
+          problem: "During multi-entity e-Invoice testing, submissions were rejected or mixed data between entities.",
+          solution: "Tested the full batch chain entity by entity and logged defects, including cross-entity data on a single invoice, rejections with no reason returned, and incorrect seller details on one entity.",
+          outcome: "Defects were logged with evidence and fixed before the release went live."
+        }
+      ],
+      documentation: [],
+      images: [],
+      thumbnail: "/osk-banner.svg",
+      confidential: true,
+    },
+    {
+      id: "project-acom-fee-sst",
+      title: "Attestation Fee & SST Enhancement (ACOM)",
+      description: "Functional specification and GL defect analysis for a new attestation fee with SST on a core lending platform.",
+      period: "May 2026 – Sep 2026",
+      overview:
+        "ACOM needed its core lending platform to charge a new attestation fee with Sales and Service Tax (SST) and post it correctly to the General Ledger. I led the Functional Specification Document from requirement sessions through joint review, and investigated a GL defect on early loan closure for ACOM's finance team.",
+      objectives: [
+        "Specify how the attestation fee and SST are calculated, charged and posted",
+        "Align finance, operations and IT stakeholders on one agreed specification",
+        "Surface gaps before development rather than during testing",
+        "Explain GL defects clearly to client finance stakeholders"
+      ],
+      tools: ["FSD", "Requirement Gathering", "Stakeholder Management", "GL Analysis", "Oracle SQL", "Test Evidence"],
+      role: "Professional Services Engineer",
+      contributions: [
+        "Ran requirement sessions with ACOM stakeholders over several days and issued minutes of meeting",
+        "Authored the FSD and managed tracked-change amendments through several versions to joint review",
+        "Prepared walkthrough scripts and open-questions documents for a mixed client and internal audience",
+        "Identified gaps in the requirements, including inconsistent SST arithmetic, a contradictory GL account description, and no plan for accounts already live before release",
+        "Investigated an early loan closure GL defect and prepared meeting materials and Q&A scripts for ACOM finance"
+      ],
+      process: [
+        {
+          problem: "The requirements treated the fee as both SST-inclusive and SST-exclusive in different places, and did not cover existing accounts.",
+          solution: "Flagged each inconsistency in an open-questions document and walked stakeholders through them in joint review sessions.",
+          outcome: "Issues were raised and resolved at specification stage, before any development effort was spent."
+        },
+        {
+          problem: "Cancelling a loan after disbursement wrongly recognised interest income and created a receivable that should not exist.",
+          solution: "Confirmed the behaviour with test evidence on a test account and traced it to the platform using its settlement path for cancellations.",
+          outcome: "Presented the root cause and impact to ACOM finance with supporting evidence, forming the basis for a scoped fix."
+        }
+      ],
+      documentation: [],
+      images: [],
+      thumbnail: "/acom-banner.svg",
+      confidential: true,
+    },
+    {
+      id: "project-maybank-gl-variance",
+      title: "GL Variance Analysis (Maybank)",
+      description: "Technical debugging support for GL and transaction variance on a banking platform.",
+      period: "May 2026 – Sep 2026",
+      overview:
+        "Supported technical debugging with Maybank to analyse variances between GL and transaction records on the platform.",
+      objectives: [
+        "Identify the source of variances between GL and transaction data",
+        "Support the team with data investigation during debugging sessions"
+      ],
+      tools: ["Oracle SQL", "GL Analysis", "Defect Investigation"],
+      role: "Professional Services Engineer",
+      contributions: [
+        "Took part in technical debugging sessions analysing GL and transaction variances",
+        "Ran Oracle SQL queries to compare GL and transaction records"
+      ],
+      process: [],
+      documentation: [],
+      images: [],
+      thumbnail: "/maybank-juris-banner.svg",
+      confidential: true,
+    },
+    {
       id: "project-gis-taiping",
       title: "GIS Urban Planning System (Taiping)",
       description: "Confidential government project to centralize urban planning spatial data and workflows.",
