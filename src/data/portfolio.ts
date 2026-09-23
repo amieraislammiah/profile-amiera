@@ -24,6 +24,7 @@ export interface Project {
   github?: string;
   demo?: string;
   thumbnail?: string;
+  thumbnailFit?: "cover" | "contain";
   confidential?: boolean;
 }
 
@@ -270,6 +271,7 @@ export const portfolioData = {
       documentation: [],
       images: [],
       thumbnail: "/osk.jpeg",
+      thumbnailFit: "contain",
       confidential: true,
     },
     {
@@ -309,6 +311,7 @@ export const portfolioData = {
       documentation: [],
       images: [],
       thumbnail: "/acom.png",
+      thumbnailFit: "contain",
       confidential: true,
     },
     {
