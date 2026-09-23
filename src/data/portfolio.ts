@@ -59,10 +59,10 @@ export interface Certification {
 export const portfolioData = {
   personalInfo: {
     name: "Nur Amiera Islammiah",
-    title: "Information Systems Engineering Graduate | System Analyst",
+    title: "Professional Services Engineer | Business Analyst",
     tagline: "Building Scalable Systems with Data-Driven Precision.",
     summary:
-      "A results-driven Bachelor of Information Systems (Hons.) graduate majoring in Information Systems Engineering, with over one year of hands-on experience in data analytics, process automation, system development, and solution design gained through roles at PETRONAS and HeiTech Padu Berhad under the PROTÉGÉ program. At PETRONAS, I contributed as a Data Programmer, delivering data-driven solutions, streamlining workflows through automation, and enhancing reporting accuracy and efficiency. I further strengthened my business and system analysis capabilities through my experience supporting system development initiatives at Maybank, helping to improve operational performance and stakeholder alignment. Equipped with strong analytical thinking, technical proficiency, and a continuous improvement mindset, I am eager to contribute as a System Analyst, Business Analyst, or Software Engineer in building scalable, high-impact digital solutions that drive business value.",
+      "Business analyst and implementation engineer with 2 years of experience across core banking delivery, government system documentation and front-end application support. I author functional specifications, configure and test financing modules, investigate production defects in Oracle and PL/SQL, and run requirement sessions with client finance, operations and IT teams. Seeking a project delivery, application maintenance or business development role in banking or enterprise software.",
     email: "amiera.islammiah@gmail.com",
     linkedin: "https://linkedin.com/in/nuramieraislammiah",
     github: "https://github.com/amieraislammiah",
