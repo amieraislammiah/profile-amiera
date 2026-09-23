@@ -66,7 +66,7 @@ export const portfolioData = {
     email: "amiera.islammiah@gmail.com",
     linkedin: "https://linkedin.com/in/nuramieraislammiah",
     github: "https://github.com/amieraislammiah",
-    resumeUrl: "/Resume_Nur_Amiera_Islammiah.pdf",
+    resumeUrl: "/Resume_Nur%20Amiera%20Islammiah.pdf",
   },
   skills: [
     {
@@ -269,7 +269,7 @@ export const portfolioData = {
       ],
       documentation: [],
       images: [],
-      thumbnail: "/osk-banner.svg",
+      thumbnail: "/osk.jpeg",
       confidential: true,
     },
     {
@@ -308,7 +308,7 @@ export const portfolioData = {
       ],
       documentation: [],
       images: [],
-      thumbnail: "/acom-banner.svg",
+      thumbnail: "/acom.png",
       confidential: true,
     },
     {
@@ -331,7 +331,7 @@ export const portfolioData = {
       process: [],
       documentation: [],
       images: [],
-      thumbnail: "/maybank-juris-banner.svg",
+      thumbnail: "/maybank.jpg",
       confidential: true,
     },
     {
