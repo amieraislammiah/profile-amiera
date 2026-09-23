@@ -65,14 +65,14 @@ export const portfolioData = {
       "A results-driven Bachelor of Information Systems (Hons.) graduate majoring in Information Systems Engineering, with over one year of hands-on experience in data analytics, process automation, system development, and solution design gained through roles at PETRONAS and HeiTech Padu Berhad under the PROTÉGÉ program. At PETRONAS, I contributed as a Data Programmer, delivering data-driven solutions, streamlining workflows through automation, and enhancing reporting accuracy and efficiency. I further strengthened my business and system analysis capabilities through my experience supporting system development initiatives at Maybank, helping to improve operational performance and stakeholder alignment. Equipped with strong analytical thinking, technical proficiency, and a continuous improvement mindset, I am eager to contribute as a System Analyst, Business Analyst, or Software Engineer in building scalable, high-impact digital solutions that drive business value.",
     email: "amiera.islammiah@gmail.com",
     linkedin: "https://linkedin.com/in/nuramieraislammiah",
-    github: "https://github.com/nuramieraislammiah",
-    resumeUrl: "https://drive.google.com/file/d/1fHHE_iiWLwDJflpR3CIBtQ3H0NDZf5oJ/view?usp=sharing",
+    github: "https://github.com/amieraislammiah",
+    resumeUrl: "/Resume_Nur_Amiera_Islammiah.pdf",
   },
   skills: [
     {
       category: "Programming & Web",
       skills: [
-        "SQL", "MySQL", "MSSQL", "Oracle", "MongoDB",
+        "SQL", "Oracle PL/SQL", "MySQL", "MSSQL", "Oracle", "MongoDB",
         "Python", "PHP", "JavaScript", "HTML/CSS",
         "Node.js", "ASP.NET Core", "Laravel", "Bootstrap",
         "PowerApps", "PowerBI"
@@ -81,7 +81,7 @@ export const portfolioData = {
     {
       category: "Tools & Software",
       skills: [
-        "Visual Studio", "JIRA", "Git", "GitHub",
+        "Visual Studio", "JIRA", "ClickUp", "Git", "GitHub",
         "Microsoft Visio", "Lucidchart", "Draw.io", "SharePoint",
         "AI Studio", "R Studio", "WEKA"
       ],
@@ -90,6 +90,8 @@ export const portfolioData = {
       category: "Core Competencies",
       skills: [
         "System Requirement & Analysis",
+        "Functional Specification (FSD) Authoring",
+        "Core Banking & GL Configuration",
         "Database Engineering",
         "Business Data Analytics",
         "System Design & Implementation",
@@ -100,10 +102,24 @@ export const portfolioData = {
   ] as SkillCategory[],
   experience: [
     {
+      id: "exp-juris",
+      company: "JurisTech Sdn Bhd",
+      role: "Professional Services Engineer",
+      period: "May 2026 – Sep 2026",
+      description: "Delivered and maintained modules on a core banking and lending platform for banking and financial services clients, across projects for OSK, Maybank and ACOM.",
+      achievements: [
+        "Ran four concurrent implementation, enhancement and maintenance engagements.",
+        "Authored and version-controlled Functional Specification Documents and system interface specifications. Ran requirement sessions with client finance and operations stakeholders, issued minutes of meeting, and carried tracked-change amendments through joint review to sign-off.",
+        "Configured General Ledger mappings and financing modules, then tested them against the platform financing APIs with documented test evidence.",
+        "Investigated and fixed production defects: GL mis-postings, late batch runs that left GL files missing, e-Invoice submission rejections, and revenue recognition errors on early loan closure. Delivered remediation scripts in Oracle SQL and PL/SQL, deployed through Git-based release workflows.",
+        "Prepared client-facing impact assessments, walkthrough scripts and stakeholder Q&A briefings, surfacing gaps that became scoped follow-on enhancements."
+      ],
+    },
+    {
       id: "exp-0",
       company: "GeoInfo Services Sdn Bhd",
       role: "System Analyst (Contract)",
-      period: "Dec 2025 – Present",
+      period: "Dec 2025 – May 2026",
       description: "Lead system analysis and solution development for GIS-based and government-related digital projects.",
       achievements: [
         "Led analysis and solution design for GeoSeremban, Taiping Smart City, and Sime Darby Guthrie initiatives, supporting digital transformation and data-driven urban planning.",
@@ -137,7 +153,7 @@ export const portfolioData = {
     {
       id: "exp-3",
       company: "PETRONAS",
-      role: " Data Programmer (Intern - GPD/PD&T)",
+      role: "Data Programmer (Intern - GPD/PD&T)",
       period: "Sep 2024 - Feb 2025",
       description: "Served as Data Programmer in the Construction & Fabrication department.",
       achievements: [
@@ -151,7 +167,7 @@ export const portfolioData = {
       id: "exp-4",
       company: "PETRONAS Meranti Jaya",
       role: "Cashier (Part-Time)",
-      period: "Mac 2020 - Sep 2024",
+      period: "Mar 2020 - Sep 2024",
       description: "Provided excellent customer service and handled transactions efficiently.",
       achievements: [
        "Processed cash, card, and digital payments accurately using POS systems, ensuring transaction integrity and compliance with company procedures.",
@@ -622,4 +638,3 @@ export const portfolioData = {
     },
   ] as Project[],
 };
-
